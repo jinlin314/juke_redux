@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const Sidebar = (props) => {
+export const Sidebar = (props) => {
 
-  const playlists = props.playlists;
+ const playlists = props.playlists;
 
   return (
     <sidebar>
@@ -39,8 +39,15 @@ const Sidebar = (props) => {
           })
         }
       </ul>
+
+        <section>
+            <h4 className="text-muted">Lyrics</h4>
+            <h4>
+                <Link className="btn btn-primary btn-block" to="/lyrics">
+                    <span className="glyphicon glyphicon-plus"></span> LYRICS
+                </Link>
+            </h4>
+        </section>
     </sidebar>
   );
 }
-
-export default Sidebar;

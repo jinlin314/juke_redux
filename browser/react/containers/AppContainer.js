@@ -7,7 +7,7 @@ import AUDIO from '../audio';
 
 import Albums from '../components/Albums.js';
 import Album from '../components/Album';
-import Sidebar from '../components/Sidebar';
+import {Sidebar} from '../components/Sidebar';
 import Player from '../components/Player';
 
 import { convertAlbum, convertAlbums, convertSong, skip } from '../utils';
